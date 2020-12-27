@@ -4,7 +4,7 @@ require_once "model/FeederTypeModel.php";
 require_once "model/FeederModel.php";
 require_once "entities/FeederEntity.php";
 
-class FeederStatsController
+class GeneralStatsController
 {
     private $feederTypeModel;
     private $feederModel;
@@ -52,30 +52,26 @@ class FeederStatsController
                         </form>
                     </div>
                     <div class='search_result'>".$table."</div>
+                    <div class='test2'>
+                    <table>
+                    <tr class='table_header_row'>
+                        <th id='test' colspan='2'></th>
+                        <th>OK</th>
+                        <th>DAMAGE</th>
+                        <th>NG</th>
+                        <th>ALL</th>
+                    </tr>
+            <tr class='table_total'>
+                <td colspan='2'>Total Amount</td>
+                <td class='numbers'>1</td>
+                <td class='numbers'>2</td>
+                <td class='numbers'>2</td>                        
+                <td class='numbers'>3</td>  
+            </tr>".
+            "</table>
+</div>
                 </div>";
     }
-
-//
-//    function createTable($feedersStats) {
-//        $result = "<table class='stats_table'>
-//                    <tr class='table_header_row'>
-//                        <th>STATE</th>
-//                        <th>MECHANISM</th>
-//                        <th>SIZE</th>
-//                        <th>COUNT</th>
-//                    </tr>";
-//        foreach ($feedersStats as $feedersStat) {
-//            $result = $result . "
-//                    <tr class='table_row'>
-//                        <td>".$feedersStat['state']."</td>
-//                        <td>".$feedersStat['mechanismName']."</td>
-//                        <td>".$feedersStat['sizeName']."</td>
-//                        <td>".$feedersStat['count']."</td>
-//                    </tr>";
-//        }
-//        return $result . "</table>";
-//    }
-
 
     function createTable($feedersStats) {
         $ok = 0;
@@ -106,15 +102,7 @@ class FeederStatsController
                         <td class='numbers'>".$feedersStat['allFeeder']."</td>                        
                     </tr>";
         }
-        return $result .
-            "<tr class='table_total'>
-                <td colspan='2'>Total Amount</td>
-                <td class='numbers'>".$ok."</td>
-                <td class='numbers'>".$damage."</td>
-                <td class='numbers'>".$ng."</td>                        
-                <td class='numbers'>".$all."</td>  
-            </tr>".
-            "</table>";
+        return $result ."</table>";
     }
 
     function createSizeTypeOptionValue(array $sizesValues)

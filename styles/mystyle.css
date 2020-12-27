@@ -1,11 +1,9 @@
-body
-{
+body {
     background-color: #404040;
     font-family: 'Lato', sans-serif;
 }
 
-div.error
-{
+div.error {
     font-size: 20px;
     color: red;
     text-align: center;
@@ -13,8 +11,7 @@ div.error
 }
 
 
-div.success
-{
+div.success {
     font-size: 20px;
     color: green;
     text-align: center;
@@ -22,16 +19,14 @@ div.success
 }
 
 
-#container
-{
+#container {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     color: #666666;;
 }
 
-#logo
-{
+#logo {
     text-align: center;
     color: white;
     margin-top: 20px;
@@ -40,8 +35,7 @@ div.success
     font-weight: 900;
 }
 
-#menu
-{
+#menu {
     background-color: #303030;
     margin-top: 30px;
     letter-spacing: 1px;
@@ -78,8 +72,7 @@ div.success
 /*}*/
 
 
-#content
-{
+#content {
     /*float: left;*/
     clear: both;
     padding: 40px;
@@ -90,16 +83,14 @@ div.success
 
 }
 
-#footer
-{
+#footer {
     clear: both;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-.option
-{
+.option {
     float: left;
     min-width: 50px;
     height: 45px;
@@ -109,36 +100,31 @@ div.success
     opacity: 0.8;
 }
 
-.option:hover
-{
+.option:hover {
     background-color: #000000;
     cursor: pointer;
 }
 
 
-.bigtitle
-{
+.bigtitle {
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-.dottedline
-{
+.dottedline {
     height: 5px;
     margin-top: 15px;
     margin-bottom: 20px;
     border-bottom: 2px dotted #444444;
 }
 
-#logout
-{
+#logout {
     border: none;
     float: right;
 }
 
-a
-{
+a {
     color: #ffffff;
     text-decoration: none;
     display: block;
@@ -147,45 +133,14 @@ a
     padding: 10px;
 }
 
-input[type=text],
-input[type=password]
-{
-    width: 300px;
-    background-color: #efefef;
-    color: #666666;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
-    /*margin-top: 10px;*/
-}
-input[type=submit]
-{
-    /*width: 300px;*/
-    /*background-color: #128870;*/
-    /*font-size: 20px;*/
-    /*color: white;*/
-    /*padding: 15px 10px;*/
-    /*margin-top: 20px;*/
-    /*border: none;*/
-    /*border-radius: 5px;*/
-    /*cursor: pointer;*/
-    /*letter-spacing: 2px;*/
-    /*outline: none;*/
-}
-
-#content .form
-{
+.modify_form_wrapper {
     max-width: 500px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#content .form .title
-{
+.modify_form_title {
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -194,16 +149,14 @@ input[type=submit]
     text-align: center;
 }
 
-#content .form .input_field
-{
+.modify_input_field {
     color: #666666;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
 }
 
-#content .form .input_field label
-{
+.modify_label {
     text-transform: uppercase;
     min-width: 170px;
     width: 250px;
@@ -211,9 +164,10 @@ input[type=submit]
     font-size: 20px;
 }
 
-#content .form .input_field .input,
-#content .form .input_field .textarea
-{
+.modify_input,
+.modify_textarea {
+    background-color: #efefef;
+    color: #666666;
     width: 100%;
     outline: none;
     border: 1px solid #128870;
@@ -223,8 +177,7 @@ input[type=submit]
     transition: all 0.3s ease;
 }
 
-#content .form .input_field .input:focus
-{
+.modify_input:focus {
     -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
@@ -233,22 +186,19 @@ input[type=submit]
     color: #428c42;
 }
 
-#content .form .input_field .textarea
-{
-    background-color: #efefef;
+.modify_textarea {
     resize: none;
     min-height: 125px;
 }
 
-#content .form .input_field .custom_select
-{
+.modify_select_wrapper {
     position: relative;
     width: 100%;
     height: 38px;
 }
 
-#content .form .input_field .custom_select select
-{
+
+.modify_select {
     /*appearance: none;*/
     border: 1px solid #128870;
     width: 100%;
@@ -262,13 +212,7 @@ input[type=submit]
     cursor: pointer;
 }
 
-#content .form .input_field .custom_select option
-{
-    font-size: 18px;
-}
-
-#content .form .input_field .btn
-{
+.modify_btn {
     background-color: #128870;
     width: 100%;
     padding: 10px 10px;
@@ -280,8 +224,7 @@ input[type=submit]
     font-weight: 600;
 }
 
-#content .welcome
-{
+.welcome {
     margin-top: 150px;
     color: #128870;
     text-align: center;
@@ -291,63 +234,21 @@ input[type=submit]
 
 
 
-/*search*/
-
-#content .search
-{
-
-    /*max-width: 800px;*/
-    /*height: 500px;*/
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#content .search_menu
-{
-    /*border: 2px solid black;*/
-    letter-spacing: 1px;
-    color: #ffffff;
-    /*width: 100%;*/
-    width: 566px;
-    /*text-align: center;*/
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-#content .search_menu .input_field
-{
-    float: left;
-    color: #666666;
-    display: flex;
-    align-items: center;
-    padding: 0 20px 20px 20px;
-    /*border-right: 1px solid black;*/
-}
-
-#content .search_menu .input_field label
-{
+.specific_search_label {
     margin-right: 15px;
     text-transform: uppercase;
     font-size: 15px;
 }
 
-#content .search .search_result
-{
-    padding-top: 20px;
-    border-top: 2px dotted #666666;
-
-}
-#content .search .search_menu .input_field .custom_select {
+.specific_search_select {
     position: relative;
     /*width: 100%;*/
     height: 30px;
     width: 100px;
-
-
 }
-#content .search .search_menu .input_field .custom_select select {
+
+
+.specific_search_select {
     appearance: none;
     border: 1px solid #128870;
     width: 100%;
@@ -361,8 +262,59 @@ input[type=submit]
     cursor: pointer;
 }
 
-#content .search .search_menu .input_field .btn
-{
+
+/*specific stats*/
+
+.specific_search_menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 893px;
+}
+
+.specific_search_input_field {
+    float: left;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    /*border-right: 1px solid black;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.specific_search_input {
+    background-color: #efefef;
+    outline: none;
+    border: 1px solid #128870;
+    font-size: 15px;
+    height: 28px;
+    padding: 0 0 0 5px;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.specific_search_select_wrapper {
+    position: relative;
+    /*width: 100%;*/
+    height: 30px;
+    width: 100px;
+}
+
+.specific_search_select {
+    appearance: none;
+    border: 1px solid #128870;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 15px;
+    background-color: #efefef;
+    color: #666;
+    cursor: pointer;
+}
+
+.btn_search {
     background-color: #128870;
     width: 80px;
     height: 30px;
@@ -374,38 +326,53 @@ input[type=submit]
     /*outline: none;*/
 }
 
-#content .search .search_result table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-#content .search .search_result th {
-    text-align: center;
-}
-
-#content .search .search_result td, th {
+.specific_search_table_wrapper {
     border: 1px solid black;
-    text-align: left;
+    overflow-y: scroll;
+    flex-grow: 1;
+    height: 300px;
+}
+
+.search_table_header_serialNo {
+    min-width: 250px;
+}
+
+.search_table_header_mechanism {
+    min-width: 200px;
+}
+
+.search_table_header_size {
+    min-width: 200px;
+}
+
+.search_table_header_state {
+    min-width: 150px;
+}
+
+th {
+    position: sticky;
+    top: -1px;
+    background: #DDD;
+}
+
+td, th {
+    /*border: 1px solid black;*/
+    text-align: center;
     padding: 8px;
 }
 
-#content .search .search_result .table_row:nth-child(even) {
-    background-color: #303030;
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_row:nth-child(even) {
+    background-color: #6d8c88;
     color: white;
 }
 
-#content .search .search_result .table_row:hover
+.table_row:hover
 {
     background-color: #128870;
     color: white;
-}
-
-#content .search .search_result .table_total {
-    background-color: #f3641c;
-    color: white;
-    font-weight: 600;
-}
-
-#content .search .search_result table .numbers {
-    text-align: center;
 }

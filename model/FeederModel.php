@@ -132,17 +132,6 @@ class FeederModel
         return $feederQuery->execute();
     }
 
-//SELECT mechanismName, sizeName,
-//COUNT(case feeders.state when 'OK' then 1 else null end) as ok,
-//COUNT(case feeders.state when 'DAMAGE' then 1 else null end) as damage,
-//COUNT(case feeders.state when 'NG' then 1 else null end) as ng,
-//COUNT(*) as aaa
-//FROM ((feeders INNER join mechanisms on feeders.mechanismId = mechanisms.mechanismId)
-//INNER JOIN sizes on feeders.sizeId = sizes.sizeId)
-//GROUP by feeders.mechanismId, feeders.sizeId
-
-
-
     function fetchFeedersStats($size, $mechanism)
     {
         $statsQuery = $this->db->prepare('
@@ -162,23 +151,25 @@ class FeederModel
         $statsQuery->execute();
         return $statsQuery->fetchAll();
     }
-//
-//    function fetchAllFeedersStatse($state, $size, $mechanism)
-//    {
-//        $statsQuery = $this->db->prepare('SELECT state, mechanismName, sizeName, COUNT(state) as count
-//                                  FROM ((feeders
-//                                  INNER join mechanisms on feeders.mechanismId = mechanisms.mechanismId)
-//                                  INNER JOIN sizes on feeders.sizeId = sizes.sizeId)
-//                                  WHERE state LIKE :state
-//                                      AND feeders.sizeId LIKE :sizeId
-//                                      AND feeders.mechanismId LIKE :mechanismId
-//                                        GROUP by state, feeders.mechanismId, feeders.sizeId');
-//        $statsQuery->bindValue(":state", $state);
-//        $statsQuery->bindValue(":sizeId", $size);
-//        $statsQuery->bindValue(":mechanismId", $mechanism);
-//        $statsQuery->execute();
-//        return $statsQuery->fetchAll();
-//    }
-}
 
+    function fetchSpecificFeedersStats($serialNo, $state, $size, $mechanism)
+    {
+        $statsQuery = $this->db->prepare('SELECT serialNo, state, mechanismName, sizeName
+                                  FROM ((feeders
+                                  INNER join mechanisms on feeders.mechanismId = mechanisms.mechanismId)
+                                  INNER JOIN sizes on feeders.sizeId = sizes.sizeId)
+                                  WHERE feeders.serialNo LIKE :serialNo
+                                      AND feeders.state LIKE :state
+                                      AND feeders.sizeId LIKE :sizeId
+                                      AND feeders.mechanismId LIKE :mechanismId');
+        $statsQuery->bindValue(":serialNo", '%'.$serialNo.'%');
+        $statsQuery->bindValue(":state", $state);
+        $statsQuery->bindValue(":sizeId", $size);
+        $statsQuery->bindValue(":mechanismId", $mechanism);
+        $statsQuery->execute();
+        return $statsQuery->fetchAll();
+    }
+}
 ?>
+
+

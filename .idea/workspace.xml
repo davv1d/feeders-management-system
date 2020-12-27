@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c40d6c0f-39cf-4834-8aec-2cb183b9ac93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
-    </list>
+    <list default="true" id="c40d6c0f-39cf-4834-8aec-2cb183b9ac93" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +40,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -71,7 +70,9 @@
       <workItem from="1608915351955" duration="15128000" />
       <workItem from="1608984351843" duration="16394000" />
       <workItem from="1609015291103" duration="3073000" />
-      <workItem from="1609066655879" duration="18039000" />
+      <workItem from="1609066655879" duration="25788000" />
+      <workItem from="1609097143981" duration="6962000" />
+      <workItem from="1609104134021" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize">
       <created>1609085639873</created>
@@ -80,15 +81,56 @@
       <option name="project" value="LOCAL" />
       <updated>1609085639873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initialize">
+      <created>1609086041473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609086041473</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Statistic v1">
+      <created>1609104228221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609104228221</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Statistic v1">
+      <created>1609104461177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609104461177</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Statistics v1">
+      <created>1609104478433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609104478433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize" />
+    <MESSAGE value="Statistic v1" />
+    <MESSAGE value="Statistics v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Statistics v1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
