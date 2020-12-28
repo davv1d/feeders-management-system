@@ -27,39 +27,39 @@ class NewFeederController
     {
         return "
                 <div class='modify_form_wrapper'>
-                    <div class='modify_form_title'>New Feeder</div>
+                    <div class='title'>New Feeder</div>
                     <form method='post' action=''>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Serial number</label>        
-                            <input type='text' name='serialNo' class='modify_input'>
+                        <div class='input_field'>
+                            <label class='label'>Serial number</label>        
+                            <input type='text' name='serialNo' class='input'>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>State</label>        
-                            <div class='modify_select_wrapper'>
-                                <select name='state' class='modify_select'>
+                        <div class='input_field'>
+                            <label class='label'>State</label>        
+                            <div class='select_wrapper'>
+                                <select name='state'>
                                     <option value='OK'>OK</option>
                                     <option value='NG'>NG</option>
                                 </select>
                             </div>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Size</label>        
-                            <div class='modify_select_wrapper'>
-                                <select name='size' class='modify_select'>
+                        <div class='input_field'>
+                            <label class='label'>Size</label>        
+                            <div class='select_wrapper'>
+                                <select name='size'>
                                     ".$this->createSizeTypeOptionValue($this->feederTypeModel->getFeedersSizeTypes())."
                                 </select>
                             </div>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Mechanism</label>        
-                            <div class='modify_select_wrapper'>
-                                <select name='mechanism' class='modify_select'>
+                        <div class='input_field'>
+                            <label class='label'>Mechanism</label>        
+                            <div class='select_wrapper'>
+                                <select name='mechanism'>
                                     ".$this->createMechanismTypeOptionValue($this->feederTypeModel->getFeedersMechanismTypes())."
                                 </select>
                             </div>
                         </div>
-                        <div class='modify_input_field'>
-                            <input type='submit' value='OK' class='modify_btn'>
+                        <div class='input_field'>
+                            <input type='submit' value='OK' class='btn'>
                         </div>
                     </form>
                     ".self::createResponseDiv($response)."

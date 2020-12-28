@@ -31,13 +31,13 @@ class SpecifisStatsController
                 <div class='specific_search'>
                     <div class='specific_search_menu'>
                         <form method='post' action=''>
-                            <div class='specific_search_input_field'>      
-                                <input type='text' name='serialNo' class='specific_search_input' placeholder='SERIAL NO'>
+                            <div class='input_field'>      
+                                <input type='text' name='serialNo' class='input' placeholder='SERIAL NO'>
                             </div>
-                            <div class='specific_search_input_field'>
-                                <label class='specific_search_label'>State</label>        
-                                    <div class='specific_search_select_wrapper'>
-                                        <select name='state' class='specific_search_select'>
+                            <div class='input_field'>
+                                <label>State</label>        
+                                    <div class='select_wrapper'>
+                                        <select name='state'>
                                             <option value='%'>ALL</option>
                                             <option value='OK'>OK</option>
                                             <option value='DAMAGE'>DAMAGE</option>
@@ -45,32 +45,32 @@ class SpecifisStatsController
                                         </select>
                                     </div>
                                 </div>
-                            <div class='specific_search_input_field'>
-                                <label class='specific_search_label'>Size</label>
-                                <div class='specific_search_select_wrapper'>
-                                    <select name='size' class='specific_search_select'>
+                            <div class='input_field'>
+                                <label>Size</label>
+                                <div class='select_wrapper'>
+                                    <select name='size'>
                                         <option value='%'>ALL</option>
                                         " . $this->createSizeTypeOptionValue($this->feederTypeModel->getFeedersSizeTypes()) . "
                                     </select>
                                 </div>
                             </div>
-                            <div class='specific_search_input_field'>
-                                <label class='specific_search_label'>Mechanism</label>
-                                <div class='specific_search_select_wrapper'>
-                                    <select name='mechanism' class='specific_search_select'>
+                            <div class='input_field'>
+                                <label class='label'>Mechanism</label>
+                                <div class='select_wrapper'>
+                                    <select name='mechanism'>
                                         <option value='%'>ALL</option>
                                         " . $this->createMechanismTypeOptionValue($this->feederTypeModel->getFeedersMechanismTypes()) . "
                                     </select>
                                 </div>
                             </div>
-                            <div class='specific_search_input_field'>
-                                <input type='submit' value='SEARCH' class='btn_search'>
+                            <div class='input_field'>
+                                <input type='submit' value='SEARCH' class='btn'>
                             </div>
                             <div style='clear: both'></div>
                         </form>
                     </div>
-                    <div class='specific_search_table_wrapper'>" . $table . "</div>
-                    <div class='specific_search_table_resume_wrapper'>".self::createTable2()."</div>
+                    <div class='search_table_wrapper'>" . $table . "</div>
+                    <div class='search_table_total_wrapper'>".self::createTable2()."</div>
                 </div>";
     }
 

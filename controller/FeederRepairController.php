@@ -26,27 +26,27 @@ class FeederRepairController
     {
         return "
                 <div class='modify_form_wrapper'>
-                    <div class='modify_form_title'>Feeder Repair</div>
+                    <div class='title'>Feeder Repair</div>
                     <form method='post' action=''>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Serial number</label>        
-                            <input type='text' name='serialNo' class='modify_input'>
+                        <div class='input_field'>
+                            <label class='label'>Serial number</label>        
+                            <input type='text' name='serialNo' class='input'>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Status</label>        
-                            <div class='modify_select_wrapper'>
-                                <select name='state' class='modify_select'>
+                        <div class='input_field'>
+                            <label class='label'>Status</label>        
+                            <div class='select_wrapper'>
+                                <select name='state'>
                                     <option value='OK'>OK</option>
                                     <option value='NG'>NG</option>
                                 </select>
                             </div>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Description</label>
-                            <textarea name='repairDesc' class='modify_textarea'></textarea>
+                        <div class='input_field'>
+                            <label class='label'>Description</label>
+                            <textarea name='repairDesc' class='textarea'></textarea>
                         </div>
-                        <div class='modify_input_field'>
-                            <input type='submit' value='OK' class='modify_btn'>
+                        <div class='input_field'>
+                            <input type='submit' value='OK' class='btn'>
                         </div>
                     </form>
                     " . self::createResponseDiv($response) . "

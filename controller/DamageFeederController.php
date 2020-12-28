@@ -19,18 +19,18 @@ class DamageFeederController
     function createDamageForm($response)
     {
         return "<div class='modify_form_wrapper'>
-                    <div class='modify_form_title'>Damage Feeder</div>
+                    <div class='title'>Damage Feeder</div>
                     <form method='post' action=''>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Serial number</label>        
-                            <input type='text' name='serialNo' class='modify_input'>
+                        <div class='input_field'>
+                            <label class='label'>Serial number</label>        
+                            <input type='text' name='serialNo' class='input'>
                         </div>
-                        <div class='modify_input_field'>
-                            <label class='modify_label'>Damage code</label>        
-                            <input type='text' name='damageCode' class='modify_input'>
+                        <div class='input_field'>
+                            <label class='label'>Damage code</label>        
+                            <input type='text' name='damageCode' class='input'>
                         </div>
-                        <div class='modify_input_field'>
-                            <input type='submit' value='OK' class='modify_btn'>
+                        <div class='input_field'>
+                            <input type='submit' value='OK' class='btn'>
                         </div>
                     </form>
                     " . self::createResponseDiv($response) . "

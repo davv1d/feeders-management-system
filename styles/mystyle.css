@@ -10,14 +10,12 @@ div.error {
     text-transform: uppercase;
 }
 
-
 div.success {
     font-size: 20px;
     color: green;
     text-align: center;
     text-transform: uppercase;
 }
-
 
 #container {
     width: 1000px;
@@ -43,37 +41,7 @@ div.success {
     padding: 10px;
 }
 
-/*#topbar*/
-/*{*/
-/*    background-color: #128870;*/
-/*    color: white;*/
-/*    padding: 10px;*/
-/*    margin-top: 20px;*/
-/*    margin-bottom: 25px;*/
-/*    height: 170px;*/
-/*}*/
-
-/*#topbarL*/
-/*{*/
-/*    float:left;*/
-/*    padding: 20px;*/
-/*    width: 138px;*/
-/*    text-align: center;*/
-/*    border-right: 2px dotted #cccccc;*/
-/*}*/
-
-/*#topbarR*/
-/*{*/
-/*    float: left;*/
-/*    padding: 20px;*/
-/*    width: 760px;*/
-/*    font-size: 16px;*/
-/*    text-align: justify;*/
-/*}*/
-
-
 #content {
-    /*float: left;*/
     clear: both;
     padding: 40px;
     width: 920px;
@@ -140,7 +108,7 @@ a {
     margin-right: auto;
 }
 
-.modify_form_title {
+.modify_form_wrapper .title {
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -149,79 +117,132 @@ a {
     text-align: center;
 }
 
-.modify_input_field {
+.input_field {
     color: #666666;
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
 }
 
-.modify_label {
+.modify_form_wrapper .input_field {
+    margin-bottom: 15px;
+}
+
+.specific_search_menu .input_field {
+    float: left;
+    padding: 0 20px 20px 10px;
+}
+
+label {
     text-transform: uppercase;
+}
+
+.modify_form_wrapper label {
     min-width: 170px;
     width: 250px;
     margin-right: 10px;
     font-size: 20px;
 }
 
-.modify_input,
-.modify_textarea {
+.specific_search_menu label {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.input,
+.textarea {
     background-color: #efefef;
-    color: #666666;
-    width: 100%;
     outline: none;
     border: 1px solid #128870;
-    font-size: 20px;
-    padding: 8px 10px;
-    border-radius: 3px;
     transition: all 0.3s ease;
 }
 
-.modify_input:focus {
+.input:focus {
     -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
-    border: 2px solid #a5cda5;
     background-color: #e9f3e9;
     color: #428c42;
 }
 
-.modify_textarea {
+.modify_form_wrapper .input,
+.modify_form_wrapper .textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.specific_search_menu .input {
+    font-size: 15px;
+    height: 28px;
+    padding: 0 0 0 5px;
+    border-radius: 1px;
+}
+
+.modify_form_wrapper .textarea {
     resize: none;
     min-height: 125px;
 }
 
-.modify_select_wrapper {
+.select_wrapper {
     position: relative;
+
+}
+
+.modify_form_wrapper .select_wrapper {
     width: 100%;
     height: 38px;
 }
 
+.specific_search_menu .select_wrapper {
+    height: 30px;
+    width: 100px;
+}
 
-.modify_select {
-    /*appearance: none;*/
+select {
+    appearance: none;
     border: 1px solid #128870;
     width: 100%;
     height: 100%;
-    padding: 5px 10px;
-    border-radius: 3px;
     outline: none;
-    font-size: 18px;
     background-color: #efefef;
     color: #666;
     cursor: pointer;
 }
 
-.modify_btn {
+.modify_form_wrapper select {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.specific_search_menu select {
+    padding-left: 5px;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.btn {
     background-color: #128870;
-    width: 100%;
-    padding: 10px 10px;
-    font-size: 20px;
     border: 0;
     color: #FFFFFF;
     border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+.modify_form_wrapper .btn {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 20px;
     outline: none;
     font-weight: 600;
+}
+
+
+.specific_search_menu .btn {
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
 }
 
 .welcome {
@@ -232,101 +253,13 @@ a {
     font-weight: 900;
 }
 
-
-
-.specific_search_label {
-    margin-right: 15px;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.specific_search_select {
-    position: relative;
-    /*width: 100%;*/
-    height: 30px;
-    width: 100px;
-}
-
-
-.specific_search_select {
-    appearance: none;
-    border: 1px solid #128870;
-    width: 100%;
-    height: 100%;
-    padding-left: 5px;
-    border-radius: 2px;
-    outline: none;
-    font-size: 15px;
-    background-color: #efefef;
-    color: #666;
-    cursor: pointer;
-}
-
-
-/*specific stats*/
-
 .specific_search_menu {
     margin-left: auto;
     margin-right: auto;
     width: 893px;
 }
 
-.specific_search_input_field {
-    float: left;
-    color: #666666;
-    display: flex;
-    align-items: center;
-    padding: 0 20px 20px 20px;
-    /*border-right: 1px solid black;*/
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.specific_search_input {
-    background-color: #efefef;
-    outline: none;
-    border: 1px solid #128870;
-    font-size: 15px;
-    height: 28px;
-    padding: 0 0 0 5px;
-    border-radius: 1px;
-    transition: all 0.3s ease;
-}
-
-.specific_search_select_wrapper {
-    position: relative;
-    /*width: 100%;*/
-    height: 30px;
-    width: 100px;
-}
-
-.specific_search_select {
-    appearance: none;
-    border: 1px solid #128870;
-    width: 100%;
-    height: 100%;
-    padding-left: 5px;
-    border-radius: 2px;
-    outline: none;
-    font-size: 15px;
-    background-color: #efefef;
-    color: #666;
-    cursor: pointer;
-}
-
-.btn_search {
-    background-color: #128870;
-    width: 80px;
-    height: 30px;
-    /*padding: 10px 10px;*/
-    font-size: 15px;
-    border: 0;
-    color: #FFFFFF;
-    border-radius: 3px;
-    /*outline: none;*/
-}
-
-.specific_search_table_wrapper {
+.search_table_wrapper {
     border: 1px solid black;
     overflow-y: scroll;
     flex-grow: 1;
@@ -349,30 +282,28 @@ a {
     min-width: 150px;
 }
 
-th {
+.search_table_wrapper th {
     position: sticky;
     top: -1px;
     background: #DDD;
 }
 
-td, th {
-    /*border: 1px solid black;*/
+.search_table_wrapper td, th {
     text-align: center;
     padding: 8px;
 }
 
-table {
+.search_table_wrapper table {
     margin-left: auto;
     margin-right: auto;
 }
 
-.table_row:nth-child(even) {
+.search_table_wrapper .table_row:nth-child(even) {
     background-color: #6d8c88;
     color: white;
 }
 
-.table_row:hover
-{
+.search_table_wrapper .table_row:hover {
     background-color: #128870;
     color: white;
 }
